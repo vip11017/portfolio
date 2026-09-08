@@ -3,622 +3,949 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vishal Patel Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/portfolio.png">
+  <title>Vishal Patel, AI / ML Engineer</title>
+  <meta name="description"
+    content="Vishal Patel is an AI / ML and software engineer. Production RAG chatbots, agentic multi-agent systems, and full-stack backends. M.S. Computer Science (AI) at USC.">
+  <meta name="author" content="Vishal Patel">
+  <meta name="color-scheme" content="dark">
 
-  <!--
-    - custom css link
-  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vishal Patel, AI / ML Engineer">
+  <meta property="og:description"
+    content="Production RAG chatbots, agentic multi-agent systems, and full-stack backends. M.S. Computer Science (AI) at USC.">
+  <meta property="og:url" content="https://vip11017.github.io/portfolio/">
+  <meta property="og:image" content="https://vip11017.github.io/portfolio/assets/images/profile-square.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://vip11017.github.io/portfolio/">
+
+  <!-- favicon: inline monogram -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234c9df5'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230e0e11'/%3E%3Cpath d='M27 30 L50 73 L73 30' fill='none' stroke='url(%23g)' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <main>
+  <main class="layout">
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- ============ SIDEBAR ============ -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-        <a href="">
-          <figure class="avatar-box">
-            <img src="assets/images/profile.jpeg" alt="Vishal Patel" width="80"></a>
-          </figure>
-        </a>
+        <figure class="avatar-box">
+          <img src="./assets/images/profile-square.jpg" alt="Portrait of Vishal Patel" width="120" height="120">
+        </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Vishal Patel</h1>
-
-          <p class="title">UCSD Alumni, B.S.</p>
+          <h1 class="name">Vishal Patel</h1>
+          <p class="title">AI&nbsp;/&nbsp;ML Engineer</p>
+          <p class="subtitle">M.S. Computer Science (AI) &middot; USC</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
+        <button class="info-more-btn" data-sidebar-btn aria-expanded="false" aria-controls="sidebar-more">
+          <span data-sidebar-btn-label>Show contacts</span>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
         </button>
-
       </div>
 
-      <div class="sidebar-info_more">
-
+      <div class="sidebar-more" id="sidebar-more">
+       <div class="sidebar-more-inner">
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+            <span class="icon-box" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 5h16v14H4z" />
+                <path d="M4 6l8 7 8-7" />
+              </svg>
+            </span>
+            <div class="contact-text">
+              <p class="contact-label">Email</p>
+              <a href="mailto:shalp2003@gmail.com" class="contact-value">shalp2003@gmail.com</a>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:shalp2003@gmail.com" class="contact-link">shalp2003@gmail.com</a>
-            </div>
-
-          </li>
-          
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Cerritos, California, USA</address>
-            </div>
-
           </li>
 
+          <li class="contact-item">
+            <span class="icon-box" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" />
+                <circle cx="12" cy="10" r="2.6" />
+              </svg>
+            </span>
+            <div class="contact-text">
+              <p class="contact-label">Location</p>
+              <address class="contact-value">Los Angeles, California</address>
+            </div>
+          </li>
         </ul>
+
+        <a class="btn btn-primary btn-block" href="./assets/resume.pdf" target="_blank" rel="noopener">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" />
+          </svg>
+          Download résumé
+        </a>
 
         <div class="separator"></div>
 
         <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/patvishal/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+          <li>
+            <a href="https://www.linkedin.com/in/patvishal/" class="social-link" target="_blank" rel="noopener"
+              aria-label="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
             </a>
           </li>
-
-          <li class="social-item">
-            <a href="https://github.com/vip11017" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
+          <li>
+            <a href="https://github.com/vip11017" class="social-link" target="_blank" rel="noopener"
+              aria-label="GitHub">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 21.13V25" />
+              </svg>
             </a>
           </li>
-
+          <li>
+            <a href="mailto:shalp2003@gmail.com" class="social-link" aria-label="Email">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h16v14H4z" />
+                <path d="M4 6l8 7 8-7" />
+              </svg>
+            </a>
+          </li>
         </ul>
-
+       </div>
       </div>
-
     </aside>
 
 
+    <!-- ============ CONTENT ============ -->
+    <div class="main-content" id="main-content">
 
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+      <nav class="navbar" aria-label="Sections">
+        <ul class="navbar-list" role="tablist">
+          <li role="presentation">
+            <button class="navbar-link is-active" role="tab" id="tab-about" aria-controls="panel-about"
+              aria-selected="true" data-nav-link data-page="about">About</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+          <li role="presentation">
+            <button class="navbar-link" role="tab" id="tab-experience" aria-controls="panel-experience"
+              aria-selected="false" tabindex="-1" data-nav-link data-page="experience">Experience</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
+          <li role="presentation">
+            <button class="navbar-link" role="tab" id="tab-projects" aria-controls="panel-projects"
+              aria-selected="false" tabindex="-1" data-nav-link data-page="projects">Projects</button>
           </li>
-
-
-
+          <li role="presentation">
+            <button class="navbar-link" role="tab" id="tab-resume" aria-controls="panel-resume" aria-selected="false"
+              tabindex="-1" data-nav-link data-page="resume">Résumé</button>
+          </li>
         </ul>
-
       </nav>
 
 
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
+      <!-- ---------- ABOUT ---------- -->
+      <article class="panel is-active" id="panel-about" role="tabpanel" aria-labelledby="tab-about" data-page="about"
+        tabindex="0">
+        <header class="panel-head">
+          <h2 class="panel-title">About me</h2>
         </header>
 
-        <section class="about-text">
+        <div class="prose" data-reveal>
           <p>
-            A recent graduate from UCSD with a Bachelor's of Science in Cognitive Science with a specialization 
-            in machine learning and neural computation with a Finance and Data Science Minor. 
-            I'm a driven, reliable, target-focused student with strong communication and 
-            problem-solving skills with a team player mindset. Seeking opportunities in the 
-            field of data science and machine learning.
+            I turn large language models into reliable software. I work independently, building AI systems
+            for companies on contract. Most recently I built a production RAG chatbot for
+            <strong>Auro&nbsp;Wellness</strong> (Python, LangGraph, MongoDB, AWS, React) that cut repetitive
+            customer questions by 90%, all while pursuing an <strong>M.S. in Computer Science (AI
+            specialization) at USC</strong>.
           </p>
-        </section>
+          <p>
+            Before going independent I led AI-infrastructure work at
+            <strong>UC&nbsp;San&nbsp;Diego&nbsp;ITS</strong>, shipped AI backends for real-estate analytics
+            at <strong>Zenora&nbsp;Management</strong>, built RAG and multi-agent pipelines at
+            <strong>Uzera</strong>, and ran SIEM / log-management work as a cybersecurity intern at
+            <strong>Opexus&nbsp;Casepoint</strong>. My foundation is a B.S. in Cognitive Science (Machine
+            Learning &amp; Neural Computation) from UC&nbsp;San&nbsp;Diego, with minors in Data Science and
+            Finance, so I&rsquo;m as comfortable reasoning about model behavior as I am building the API
+            that serves it.
+          </p>
+          <p>
+            Outside work I&rsquo;m an Eagle Scout, and weekends usually involve carpentry, gardening, or golf.
+          </p>
+        </div>
 
-
-        <!--
-          - Education
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Education</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="assets/images/UCSD_logo.png
-                " alt="design icon" width="80">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">University of California, San Diego</h4>
-
-                <p class="service-item-text">
-                  <ul class="service-item-text">
-                    <li>- <strong>Major:</strong> Cognitive Science w/ Specialization in Machine Learning and Neural Computation</li>
-                    <li>- <strong>Minor:</strong> Data Science, Finance</li>
-                    <li>- <strong>Major GPA:</strong> 3.9</li>
+        <section class="block" aria-labelledby="edu-title" data-reveal>
+          <h3 class="block-title" id="edu-title">Education</h3>
+          <ul class="edu-list">
+            <li class="edu-card">
+              <img class="edu-logo" src="./assets/images/USC_logo.png" alt="" width="64" height="64" loading="lazy">
+              <div class="edu-body">
+                <h4 class="edu-school">University of Southern California</h4>
+                <p class="edu-degree">M.S. Computer Science, Artificial Intelligence specialization</p>
+                <ul class="edu-meta">
+                  <li>Los Angeles, CA · expected Spring 2028</li>
                 </ul>
-                </p>
               </div>
-
+            </li>
+            <li class="edu-card">
+              <img class="edu-logo" src="./assets/images/UCSD_logo.png" alt="" width="64" height="64" loading="lazy">
+              <div class="edu-body">
+                <h4 class="edu-school">University of California, San Diego</h4>
+                <p class="edu-degree">B.S. Cognitive Science, specialization in Machine Learning &amp; Neural
+                  Computation · Spring 2025</p>
+                <ul class="edu-meta">
+                  <li>Minors in Data Science &amp; Finance</li>
+                  <li>3.9 major GPA · Provost Honors</li>
+                  <li>Coursework: supervised &amp; unsupervised ML, reinforcement learning, deep learning, neural
+                    networks, systems for scalable analytics, SQL, AWS, statistics</li>
+                </ul>
+              </div>
             </li>
           </ul>
-
         </section>
 
-
-        <!--
-          - Certifications
-        -->
-
-        <section class="Testimonials">
-
-          <h3 class="h3 testimonials-title">Certifications</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/aws-logo.png" alt="Coursera" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Machine Learning Specialty</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <ul class="testimonial-list">
-                      <li><strong>- Earned on:</strong> November 23, 2024</li>
-                      <li>
-                        <ul>
-                          <li>Data Engineering</li>
-                          <li>Machine Learning</li>
-                          <li>Cloud Engineering</li>
-                          <li>Model Evaluation and Validation</li>
-                          <li>Exploratory Data Analysis</li>
-                        </ul>
-                      </li>
-                    </ul>
-                    
-                  </p>
+        <section class="block" aria-labelledby="cert-title" data-reveal>
+          <h3 class="block-title" id="cert-title">Certifications</h3>
+          <ul class="cert-grid">
+            <li class="cert-card">
+              <img class="cert-logo" src="./assets/images/aws-logo.png" alt="" width="44" height="44" loading="lazy">
+              <div class="cert-body">
+                <p class="cert-name">AWS Machine Learning Specialty</p>
+                <p class="cert-issuer">Amazon Web Services · Nov 2024</p>
+                <p class="cert-topics">Data engineering · model evaluation · cloud engineering · EDA</p>
+                <button class="cert-toggle" aria-expanded="false" aria-controls="cert-detail-1">
+                  Topics
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="cert-detail" id="cert-detail-1" hidden>
+                  <ul class="chip-list chip-list-sm">
+                    <li class="chip">Data engineering</li>
+                    <li class="chip">Machine learning</li>
+                    <li class="chip">Cloud engineering</li>
+                    <li class="chip">Model evaluation &amp; validation</li>
+                    <li class="chip">Exploratory data analysis</li>
+                  </ul>
                 </div>
-
               </div>
             </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/coursera_logo.svg" alt="Coursera" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Machine Learning by Stanford University & DeepLearning.AI</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <ul class="testimonial-list">
-                      <li><strong>- Earned on:</strong> August 14, 2023</li>
-                      <li>
-                        <strong>- Unsupervised Learning, Recommenders, Reinforcement Learning:</strong>
-                        <ul>
-                          <li>PCA (Principal Component Analysis)</li>
-                          <li>Clustering</li>
-                          <li>Collaborative Filtering</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong> Advanced Learning Algorithms:</strong>
-                        <ul>
-                          <li>Decision Trees</li>
-                          <li>Multiclass Classification</li>
-                          <li>Artificial Neural Networks</li>
-                          <li>SoftMax</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>- Supervised Machine Learning:</strong>
-                        <ul>
-                          <li>Regression</li>
-                          <li>Classification</li>
-                          <li>Gradient Descent</li>
-                          <li>Logistic Regression</li>
-                        </ul>
-                      </li>
+            <li class="cert-card">
+              <img class="cert-logo" src="./assets/images/coursera_logo.svg" alt="" width="44" height="44"
+                loading="lazy">
+              <div class="cert-body">
+                <p class="cert-name">Machine Learning Specialization</p>
+                <p class="cert-issuer">Stanford &amp; DeepLearning.AI · Aug 2023</p>
+                <p class="cert-topics">Supervised &amp; unsupervised learning · neural networks · recommenders ·
+                  RL</p>
+                <button class="cert-toggle" aria-expanded="false" aria-controls="cert-detail-2">
+                  Topics
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="cert-detail" id="cert-detail-2" hidden>
+                  <div class="cert-subgroup">
+                    <p class="cert-subgroup-title">Supervised machine learning</p>
+                    <ul class="chip-list chip-list-sm">
+                      <li class="chip">Regression</li>
+                      <li class="chip">Classification</li>
+                      <li class="chip">Gradient descent</li>
+                      <li class="chip">Logistic regression</li>
                     </ul>
-                    
-                  </p>
+                  </div>
+                  <div class="cert-subgroup">
+                    <p class="cert-subgroup-title">Advanced learning algorithms</p>
+                    <ul class="chip-list chip-list-sm">
+                      <li class="chip">Decision trees</li>
+                      <li class="chip">Multiclass classification</li>
+                      <li class="chip">Neural networks</li>
+                      <li class="chip">SoftMax</li>
+                    </ul>
+                  </div>
+                  <div class="cert-subgroup">
+                    <p class="cert-subgroup-title">Unsupervised learning, recommenders, RL</p>
+                    <ul class="chip-list chip-list-sm">
+                      <li class="chip">PCA</li>
+                      <li class="chip">Clustering</li>
+                      <li class="chip">Collaborative filtering</li>
+                    </ul>
+                  </div>
                 </div>
-
               </div>
             </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/python_logo.svg" alt="HackerRank" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python (Basic)</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <ul class="testimonial-list">
-                      <li><strong>- Earned on:</strong> October 9, 2023</li>
-                      <li>
-                        <ul>
-                          <li>Scalar Types</li>
-                          <li>Operators and Control Flow</li>
-                          <li>Strings</li>
-                          <li>Collections and Iteration</li>
-                          <li>Modularity</li>
-                          <li>Objects & Types & Classes</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </p>
+            <li class="cert-card">
+              <img class="cert-logo" src="./assets/images/python_logo.svg" alt="" width="44" height="44"
+                loading="lazy">
+              <div class="cert-body">
+                <p class="cert-name">Python (Basic)</p>
+                <p class="cert-issuer">HackerRank · Oct 2023</p>
+                <p class="cert-topics">Data structures · control flow · OOP · iteration</p>
+                <button class="cert-toggle" aria-expanded="false" aria-controls="cert-detail-3">
+                  Topics
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="cert-detail" id="cert-detail-3" hidden>
+                  <ul class="chip-list chip-list-sm">
+                    <li class="chip">Scalar types</li>
+                    <li class="chip">Operators &amp; control flow</li>
+                    <li class="chip">Strings</li>
+                    <li class="chip">Collections &amp; iteration</li>
+                    <li class="chip">Modularity</li>
+                    <li class="chip">Objects, types &amp; classes</li>
+                  </ul>
                 </div>
-
               </div>
             </li>
-
           </ul>
-
         </section>
 
-
-        <section class="Testimonials">
-
-          <h3 class="h3 testimonials-title">Technical Skills</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/languages_icon.png" alt="Languages" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Languages:</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <ul class="testimonial-list">
-                      <li>- Java</li>
-                      <li>- Python</li>
-                      <li>- HTML</li>
-                      <li>- SQL</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/dev_tool_icon.png" alt="Developer Tools" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Developer Tools:</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <ul class="testimonial-list">
-                      <li>- Git</li>
-                      <li>- VS Code</li>
-                      <li>- IntelliJ</li>
-                      <li>- Sublime Text</li>
-                      <li>- Jupyter Notebook</li>
-                      <li>- Tableau</li>
-                      <li>- AWS</li>
-                      <li>- Dask</li>
-                      <li>- Graylog</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </li>
-
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/libraries_icon.svg" alt="Libraries" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Libraries:</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <ul class="testimonial-list">
-                      <li>- pandas</li>
-                      <li>- NumPy</li>
-                      <li>- Matplotlib</li>
-                      <li>- Sci-kit learn</li>
-                      <li>- Tensor Flow</li>
-                      <li>- Flask</li>
-                      <li>- spacy</li>
-                      <li>- PyTorch</li>
-                    </ul>
-                    
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <section class="block" aria-labelledby="skills-title" data-reveal>
+          <h3 class="block-title" id="skills-title">Technical skills</h3>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Languages</h4>
+              <ul class="chip-list">
+                <li class="chip">Python</li>
+                <li class="chip">Java</li>
+                <li class="chip">SQL</li>
+                <li class="chip">Dart</li>
+                <li class="chip">HTML</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">ML &amp; AI</h4>
+              <ul class="chip-list">
+                <li class="chip">PyTorch</li>
+                <li class="chip">TensorFlow</li>
+                <li class="chip">scikit-learn</li>
+                <li class="chip">Transformers</li>
+                <li class="chip">LangChain</li>
+                <li class="chip">Hugging Face</li>
+                <li class="chip">spaCy</li>
+                <li class="chip">Optuna</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">LLM systems</h4>
+              <ul class="chip-list">
+                <li class="chip">RAG</li>
+                <li class="chip">Multi-agent orchestration</li>
+                <li class="chip">LLM fine-tuning</li>
+                <li class="chip">LangGraph</li>
+                <li class="chip">Qdrant</li>
+                <li class="chip">Ollama</li>
+                <li class="chip">n8n</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Data &amp; analytics</h4>
+              <ul class="chip-list">
+                <li class="chip">pandas</li>
+                <li class="chip">NumPy</li>
+                <li class="chip">Matplotlib</li>
+                <li class="chip">Tableau</li>
+                <li class="chip">Dask</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Backend &amp; cloud</h4>
+              <ul class="chip-list">
+                <li class="chip">FastAPI</li>
+                <li class="chip">Flask</li>
+                <li class="chip">REST APIs</li>
+                <li class="chip">MongoDB</li>
+                <li class="chip">AWS</li>
+                <li class="chip">Git</li>
+                <li class="chip">Graylog</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Web</h4>
+              <ul class="chip-list">
+                <li class="chip">React</li>
+                <li class="chip">Next.js</li>
+                <li class="chip">Flutter</li>
+              </ul>
+            </div>
+          </div>
         </section>
       </article>
 
 
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
+      <!-- ---------- EXPERIENCE ---------- -->
+      <article class="panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience" data-page="experience"
+        tabindex="0" hidden>
+        <header class="panel-head">
+          <h2 class="panel-title">Experience</h2>
         </header>
 
-        <iframe src="assets/resume.pdf" width="100%" height="700px" frameborder="0"></iframe>
+        <ol class="timeline">
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-head">
+              <h3 class="timeline-role">AI&nbsp;/&nbsp;Software Engineer <span class="timeline-at">· Auro
+                  Wellness</span></h3>
+              <p class="timeline-meta">Independent contractor · Remote · Jan 2026 – Present</p>
+            </div>
+            <ul class="timeline-points">
+              <li>Built and deployed a production RAG chatbot for the business with Python, LangGraph, MongoDB, AWS,
+                and React. Shipped the first version in Nov 2025, then continued on an expanded scope from Jan
+                2026.</li>
+              <li>Designed the end-to-end retrieval and orchestration architecture: vector search, persistent
+                application data, LLM workflows, and a React frontend in one business-facing system.</li>
+              <li>Routed routine customer inquiries through the chatbot, <strong>cutting the questions that need a
+                human response by 90%</strong>.</li>
+              <li>Built a Next.js site for the company podcast, owning frontend implementation and deployment.</li>
+              <li>Mapped additional business processes and designed an automation plan to cut manual operations
+                work.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-head">
+              <h3 class="timeline-role">R&amp;D AI&nbsp;/&nbsp;ML Engineer Intern <span class="timeline-at">·
+                  Uzera</span></h3>
+              <p class="timeline-meta">Remote · Jan 2025 – Jan 2026</p>
+            </div>
+            <ul class="timeline-points">
+              <li>Engineered a Retrieval-Augmented Generation pipeline with multi-agent orchestration (LangChain,
+                Qdrant, OpenAI APIs), lifting <strong>query accuracy 22%</strong> and scaling to
+                <strong>10k+ requests/day</strong>.</li>
+              <li>Fine-tuned transformer-based LLMs (OpenAI, Hugging Face) with PyTorch and Optuna for
+                <strong>15% more throughput</strong> and <strong>20% lower training cost</strong>, using early
+                stopping and class weighting.</li>
+              <li>Built autonomous knowledge systems in n8n for multi-agent coordination wired to Qdrant and OpenAI,
+                <strong>reducing manual intervention 40%</strong>.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-head">
+              <h3 class="timeline-role">AI-Backend Software Engineering Intern <span class="timeline-at">· Zenora
+                  Management</span></h3>
+              <p class="timeline-meta">Remote · Jul 2025 – Sep 2025</p>
+            </div>
+            <ul class="timeline-points">
+              <li>Built a backend AI Comparative Market Analysis (CMA) system on FastAPI and Zillow APIs, automating
+                valuation and <strong>cutting report-prep time 50%</strong>.</li>
+              <li>Engineered pipelines standardizing property attributes into structured LLM-ready inputs,
+                <strong>raising feature coverage 35%</strong>.</li>
+              <li>Integrated Ollama via LangChain for CMA reports with valuation ranges and pricing strategy,
+                <strong>cutting analyst workload 40%</strong>.</li>
+              <li>Designed REST endpoints serving CMA insights on demand at <strong>99% uptime</strong>.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-head">
+              <h3 class="timeline-role">Lead Technical Intern <span class="timeline-at">· UC San Diego ITS</span></h3>
+              <p class="timeline-meta">La Jolla, CA · Apr 2025 – Sep 2025</p>
+            </div>
+            <ul class="timeline-points">
+              <li>Architected an agentic AI platform (LangChain + FastAPI) orchestrating compound multi-agent systems
+                for autonomous task execution and knowledge retrieval.</li>
+              <li>Led a team of 4 interns to prototype and deploy scalable LLM apps,
+                <strong>speeding model iteration 30%</strong>.</li>
+              <li>Authored documentation and tutorials that <strong>cut onboarding time 40%</strong>.</li>
+              <li>Drove startup-style agile practices that <strong>cut feature-cycle time 20%</strong> and improved
+                collaboration.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-head">
+              <h3 class="timeline-role">Cybersecurity Intern <span class="timeline-at">· Opexus Casepoint</span></h3>
+              <p class="timeline-meta">Tysons Corner, VA · Sep 2024 – Nov 2024</p>
+            </div>
+            <ul class="timeline-points">
+              <li>Designed and implemented scalable log-management solutions with Graylog (SIEM), improving real-time
+                security monitoring and anomaly detection across enterprise-grade systems.</li>
+              <li>Optimized event parsing and alerting for <strong>25% better incident-response efficiency</strong>
+                through GROK pattern customization and alert automation.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-head">
+              <h3 class="timeline-role">ML Engineer Intern <span class="timeline-at">· Admitscope</span></h3>
+              <p class="timeline-meta">Los Angeles, CA · Jul 2023 – Sep 2023</p>
+            </div>
+            <ul class="timeline-points">
+              <li>Led development of a data pipeline and predictive-modeling workflow using web-scraped data
+                (BeautifulSoup, pandas) and feature engineering.</li>
+              <li>Trained and deployed logistic-regression models at <strong>80% accuracy</strong> as the base of a
+                scalable data-science analytics platform.</li>
+              <li>Delivered insights through Jupyter and Tableau dashboards,
+                <strong>accelerating MVP delivery by 20%</strong>.</li>
+            </ul>
+          </li>
+        </ol>
       </article>
 
 
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
+      <!-- ---------- PROJECTS ---------- -->
+      <article class="panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" data-page="projects"
+        tabindex="0" hidden>
+        <header class="panel-head">
+          <h2 class="panel-title">Projects</h2>
         </header>
 
-        <section class="projects">
+        <div class="filter-bar" role="group" aria-label="Filter projects" data-reveal>
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="ml" aria-pressed="false">ML &amp; AI</button>
+          <button class="filter-btn" data-filter="data" aria-pressed="false">Data</button>
+        </div>
 
-          <ul class="project-list">
+        <ul class="project-grid" data-project-grid>
 
-            <li class="project-item  active" data-filter-item data-category="ML/AI">
-              <a href="https://github.com/vip11017/youtube_location_extract" target="_blank">
+          <li class="project-card" data-category="ml" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/youtube-locations.jpg" alt="YouTube Locations Extract" width="1200"
+                height="750">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">ML &amp; AI</p>
+              <h3 class="project-title">YouTube Locations Extract</h3>
+              <p class="project-desc">Extracts and geolocates places named across YouTube transcripts using NLP and
+                named-entity recognition.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/youtube_location_extract" target="_blank"
+                  rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-1">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-1" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>Video transcripts mention places constantly, but that location signal is trapped in
+                    unstructured text.</dd>
+                  <dt>Approach</dt>
+                  <dd>An NLP pipeline over transcripts: named-entity recognition to pull place names, then
+                    geocoding to resolve them to coordinates.</dd>
+                  <dt>Result</dt>
+                  <dd>A structured feed of locations referenced in a video, ready for mapping or analysis.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">Python</li>
+                  <li class="chip">spaCy</li>
+                  <li class="chip">NER</li>
+                  <li class="chip">Geocoding</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
+          <li class="project-card" data-category="data" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/layoffs-analysis.jpg" alt="Tech Companies Layoffs Analysis"
+                width="1200" height="750">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Data</p>
+              <h3 class="project-title">Tech Companies Layoffs Analysis</h3>
+              <p class="project-desc">How the 2020–2024 wave of tech layoffs tracks against company stock
+                performance and hiring cycles.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/stock_layoffs_project" target="_blank"
+                  rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-2">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-2" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>The 2020&ndash;2024 layoff wave was constant news, but how does it line up with company
+                    financials?</dd>
+                  <dt>Approach</dt>
+                  <dd>Joined layoff datasets with historical stock data; explored timing, sector, and magnitude
+                    against share-price movement.</dd>
+                  <dt>Result</dt>
+                  <dd>A visual analysis of where layoffs led, lagged, or tracked market performance.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">pandas</li>
+                  <li class="chip">Matplotlib</li>
+                  <li class="chip">EDA</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                  <img src="./assets/images/youtube_project.png" alt="Youtube Extract" loading="lazy">
-                </figure>
+          <li class="project-card" data-category="ml" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/credit-segmentation.jpg" alt="Credit Card Customer Segmentation"
+                width="1200" height="750">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">ML &amp; AI</p>
+              <h3 class="project-title">Credit Card Customer Segmentation</h3>
+              <p class="project-desc">Unsupervised clustering of cardholders into actionable marketing segments with
+                K-Means and PCA.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/credit_card_customer_segmentation"
+                  target="_blank" rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-3">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-3" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>A flat customer list gives marketing nothing to target.</dd>
+                  <dt>Approach</dt>
+                  <dd>Scaled behavioral features, reduced dimensionality with PCA, clustered with K-Means, and
+                    validated cluster count with silhouette and elbow analysis.</dd>
+                  <dt>Result</dt>
+                  <dd>Distinct, interpretable spending segments with profiles you can act on.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">scikit-learn</li>
+                  <li class="chip">K-Means</li>
+                  <li class="chip">PCA</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                <h3 class="project-title">YouTube Locations Exctract</h3>
+          <li class="project-card" data-category="data" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/power-outages.jpg" alt="Power Outages Analysis" width="1200"
+                height="750" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Data</p>
+              <h3 class="project-title">Power Outages Analysis</h3>
+              <p class="project-desc">Modeling the causes and severity of major U.S. power outages from 2000–2016
+                climate and infrastructure data.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://vip11017.github.io/power_outage_analysis/" target="_blank"
+                  rel="noopener">
+                  Live demo
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-4">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-4" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>What makes some U.S. power outages minor blips and others multi-day regional failures?</dd>
+                  <dt>Approach</dt>
+                  <dd>Cleaned 2000–2016 outage records, engineered climate and infrastructure features, and built
+                    models for cause and severity.</dd>
+                  <dt>Result</dt>
+                  <dd>A predictive write-up of the factors that drive outage duration and scale.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">pandas</li>
+                  <li class="chip">scikit-learn</li>
+                  <li class="chip">Modeling</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                <p class="project-category">ML/AI</p>
+          <li class="project-card" data-category="data" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/youtube-regions.jpg" alt="YouTube Video Regions Analysis" width="1200"
+                height="750" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Data</p>
+              <h3 class="project-title">YouTube Video Regions Analysis</h3>
+              <p class="project-desc">Cross-region comparison of what drives YouTube trending across countries:
+                tags, timing, and engagement.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/youtube_videos_analysis" target="_blank"
+                  rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-5">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-5" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>&ldquo;Trending&rdquo; isn&rsquo;t one thing; it differs by country.</dd>
+                  <dt>Approach</dt>
+                  <dd>Compared trending datasets across regions on tags, publish timing, categories, and engagement
+                    ratios.</dd>
+                  <dt>Result</dt>
+                  <dd>A cross-region view of what correlates with trending where.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">pandas</li>
+                  <li class="chip">Matplotlib</li>
+                  <li class="chip">EDA</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-              </a>
-            </li>
+          <li class="project-card" data-category="ml" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/bci-cursor.jpg" alt="BCI Cursor Control" width="1200" height="750"
+                loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">ML &amp; AI</p>
+              <h3 class="project-title">BCI Cursor Control</h3>
+              <p class="project-desc">Decoding EEG signals into 2-D cursor movement with a real-time classification
+                pipeline.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/bci_cursor_control" target="_blank"
+                  rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-6">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-6" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>Turning noisy EEG into usable 2-D control in real time.</dd>
+                  <dt>Approach</dt>
+                  <dd>A signal-processing pipeline (filtering, feature extraction) feeding a classifier that maps
+                    brain activity to cursor direction.</dd>
+                  <dt>Result</dt>
+                  <dd>A working real-time loop from EEG input to on-screen cursor movement.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">Python</li>
+                  <li class="chip">NumPy</li>
+                  <li class="chip">Signal processing</li>
+                  <li class="chip">Classification</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-            <li class="project-item  active" data-filter-item data-category="Data Analysis">
-              <a href="https://github.com/vip11017/stock_layoffs_project" target="_blank">
+          <li class="project-card" data-category="ml" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/dcgan-wgan.jpg" alt="DCGAN vs WGAN Comparative Analysis" width="1200"
+                height="750" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">ML &amp; AI</p>
+              <h3 class="project-title">DCGAN vs WGAN Comparative Analysis</h3>
+              <p class="project-desc">Side-by-side training stability and image quality of DCGAN versus Wasserstein
+                GAN architectures.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/dcgan_wgan_comparative_analysis"
+                  target="_blank" rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-7">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-7" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>WGAN is supposed to train more stably than DCGAN. Does it, and at what cost to image
+                    quality?</dd>
+                  <dt>Approach</dt>
+                  <dd>Trained both architectures on the same data and budget; tracked loss dynamics, mode collapse,
+                    and sample quality.</dd>
+                  <dt>Result</dt>
+                  <dd>A side-by-side account of the stability / quality trade-off between the two.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">PyTorch</li>
+                  <li class="chip">GANs</li>
+                  <li class="chip">DCGAN</li>
+                  <li class="chip">WGAN</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
+          <li class="project-card" data-category="ml" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/projects/pacman-dqn.jpg" alt="Pac-Man Deep Q-Network" width="1200" height="750"
+                loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-tag">ML &amp; AI</p>
+              <h3 class="project-title">Pac-Man Deep Q-Network</h3>
+              <p class="project-desc">A Deep Q-Network agent that learns to play Pac-Man from raw game state.</p>
+              <div class="project-foot">
+                <a class="project-repo" href="https://github.com/vip11017/pacman_dqn_project" target="_blank"
+                  rel="noopener">
+                  GitHub
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  </svg>
+                </a>
+                <button class="project-toggle" aria-expanded="false" aria-controls="detail-8">
+                  Details
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="project-detail" id="detail-8" hidden>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>Can an agent learn Pac-Man from game state alone, with no hand-coded strategy?</dd>
+                  <dt>Approach</dt>
+                  <dd>Implemented a Deep Q-Network with experience replay and an epsilon-greedy schedule over the
+                    game&rsquo;s state space.</dd>
+                  <dt>Result</dt>
+                  <dd>An agent whose score climbs over training as the policy improves.</dd>
+                </dl>
+                <ul class="chip-list chip-list-sm">
+                  <li class="chip">Python</li>
+                  <li class="chip">Reinforcement learning</li>
+                  <li class="chip">DQN</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                  <img src="./assets/images/stock_project.png" alt="Tech Company Layoff" loading="lazy">
-                </figure>
+        </ul>
 
-                <h3 class="project-title">Tech Companies Layoffs Analysis</h3>
+        <p class="grid-empty" data-grid-empty hidden>No projects in this category.</p>
 
-                <p class="project-category">Data Analysis</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ML/AI">
-              <a href="https://github.com/vip11017/credit_card_customer_segmentation" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/cluster_project.png" alt="Credit Card Customer Segmentation" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Credit Card Customer Segmentation</h3>
-
-                <p class="project-category">ML/AI</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Analysis">
-              <a href="https://vip11017.github.io/power_outage_analysis/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/power_outage_project.png" alt="Power Outages Analysis" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Power Outages Analysis</h3>
-
-                <p class="project-category">Data Analysis</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Analysis">
-              <a href="https://github.com/vip11017/youtube_videos_analysis" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/yt_region_project.png" alt="Youtube Video Regions Analysis" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Youtube Video Regions Analysis</h3>
-
-                <p class="project-category">Data Analysis</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ML/AI">
-              <a href="https://github.com/vip11017/bci_cursor_control" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/bci_screenshot.jpeg" alt="BCI Cursor Control" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">BCI Cursor Control Project</h3>
-
-                <p class="project-category">ML/AI</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ML/AI">
-              <a href="https://github.com/vip11017/dcgan_wgan_comparative_analysis" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dcgan_project.png" alt="DCGAN WGAN project screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DCGAN WGAN Comparative Analysis</h3>
-
-                <p class="project-category">ML/AI</p>
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ML/AI">
-              <a href="https://github.com/vip11017/pacman_dqn_project" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/pacman_screenshot.png" alt="Pacman Screenshot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Pac Man Project</h3>
-
-                <p class="project-category">ML/AI</p>
-
-              </a>
-            </li>
-      
-          </ul>
-
-        </section>
-
+        <p class="projects-more" data-reveal>
+          More on <a href="https://github.com/vip11017" target="_blank" rel="noopener">github.com/vip11017</a>.
+        </p>
       </article>
 
-      
+
+      <!-- ---------- RESUME ---------- -->
+      <article class="panel" id="panel-resume" role="tabpanel" aria-labelledby="tab-resume" data-page="resume"
+        tabindex="0" hidden>
+        <header class="panel-head">
+          <h2 class="panel-title">Résumé</h2>
+        </header>
+
+        <div class="resume-top" data-reveal>
+          <p class="resume-intro">
+            The one-page snapshot, trimmed to fit. Every role and project lives in full across the other
+            tabs.
+          </p>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="./assets/resume.pdf" target="_blank" rel="noopener">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 3H5v18h14V8l-5-5zM14 3v5h5" />
+              </svg>
+              Open PDF
+            </a>
+            <a class="btn btn-outline" href="./assets/resume.pdf" download>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" />
+              </svg>
+              Download
+            </a>
+          </div>
+        </div>
+
+        <ul class="resume-glance" data-reveal>
+          <li>M.S. Computer Science (AI) &middot; USC</li>
+          <li>AWS Machine Learning &ndash; Specialty</li>
+          <li>Production RAG &middot; multi-agent &middot; full-stack</li>
+        </ul>
+
+        <figure class="resume-doc" data-reveal>
+          <a class="resume-viewer" href="./assets/resume.pdf" target="_blank" rel="noopener"
+            aria-label="View résumé full size" data-lightbox>
+            <img src="./assets/images/resume-preview.jpg" alt="Vishal Patel résumé, page 1" width="1000"
+              height="1294" loading="lazy">
+          </a>
+          <figcaption>Click to enlarge &middot; or open the PDF above</figcaption>
+        </figure>
+      </article>
 
     </div>
-
   </main>
 
+  <div class="lightbox" data-lightbox-modal hidden>
+    <button class="lightbox-close" data-lightbox-close type="button" aria-label="Close full-size view">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+    <img src="" alt="Vishal Patel résumé, full size" data-lightbox-img>
+  </div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="./assets/js/script.js" defer></script>
 </body>
 
-</html> 
+</html>
